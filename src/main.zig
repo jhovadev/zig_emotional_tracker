@@ -5,8 +5,11 @@ const ui = @import("ui.zig");
 const zig_emotional_tracking = @import("zig_emotional_tracking");
 
 pub fn main() !void {
+    // var gpa = std.heap.smp_allocator
+    //TODO
     //creamos el stdout
     var stdout_buffer: [1024]u8 = undefined;
+    // try std.fs.
     var stdout_writer = std.fs.File.stdout().writer(&stdout_buffer);
     const stdout: *std.Io.Writer = &stdout_writer.interface;
     try stdout.print("Bienvenido a tu base de datos emocional! :D\n", .{});
