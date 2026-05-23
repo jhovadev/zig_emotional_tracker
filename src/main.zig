@@ -36,6 +36,7 @@ pub fn main() !void {
             \\3.listar
             \\0.salir
             \\:
+            \\ Emotional Database, hecho por @jhovadev para Alu :3
         );
         try stdout.flush();
 
